@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% Author: Grant McGovern
+% Description: This the LaTex source code for Grant McGovern's resume.
+% Date: 28 December 2014
+%
+% Original author:
+% Rensselaer Polytechnic Institute (Originally a template was used 
+% as the backbone).
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin=0.5in, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+% For social media icons. Must compile under LuaLaTex
+\usepackage{fontawesome}
+\usepackage{fontspec}
+
+% Used to color the "grantmcgovern.com" URL
+\usepackage{fancyhdr,graphicx,xcolor,colortbl}
+
+% Used for URL mappings
+\usepackage{hyperref}
+
+% Set top and bottom margins %
+\usepackage[
+top    = 0.30cm,
+bottom = 0.55cm,
+left   = 3.00cm,
+right  = 2.50cm]{geometry}
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\huge\bf Grant McGovern} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+\moveleft.5\hoffset\centerline{{(301) 653-3550 $\parallel$ grantmcgov@gmail.com} $\parallel$ \href{https://github.com/g12mcgov}{\faGithub \ GitHub} $\parallel$ \href{http://www.linkedin.com/in/grantmcgovern/}{\faLinkedin \ LinkedIn} $\parallel$
+\href{https://twitter.com/SwedeDeamon}{\faTwitter \ Twitter}} \\
+\vspace{2 mm}
+\moveleft.5\hoffset\centerline{3661 Morrison St, NW} % Your address
+\moveleft.5\hoffset\centerline{Washington, DC 20015}
+\vspace{2 mm}
+\moveleft.5\hoffset\centerline{{\color{blue}\underline{\href{http://www.grantmcgovern.com}{grantmcgovern.com}}}}
+
+ 
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+Wake Forest University, Winston-Salem, NC, May, 2016 \\
+{\sl Bachelor of Science,} Computer Science \\
+Minor: Entrepreneurship 
+ 
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TECHNICAL TOOLBOX} 
+
+{\sl Most Knowledgeable:} Python/C++ \\
+{\sl Knowledgeable:} HTML/Twitter Bootstrap, CSS, JavaScript \\
+{\sl Familiar:} Scala, Java, Django, Flask \\ \\
+{\sl Other:} SQL, MySQL, MongoDB, Amazon AWS, GitHub, Intellij IDEA, Eclipse IDE, Jira Atlassian, Mac OS X / Linux, VPS Hosting, cPanel, Heroku, Splunk
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Software Engineering Intern} \hfill Summer 2014 \\
+newBrandAnalytics, NLP/Data Science Team, Washington, DC 
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Hacked on the NLP Stack, implemented a new \& refined Tagging Tool, and built an app used to test the performance and effectiveness of NLP code releases. 
+\end{itemize}
+ 
+{\sl Software Engineering Intern} \hfill Summer 2013, Winter 2013, Winter 2014 \\
+Cobrain, Data Science Team, Bethesda, MD 
+\begin{itemize} 
+\item Contributed towards the development of a Django web-crawler used to gather product data, built a web application/portal that displayed harvested data, and performed various ad-hoc front-end tasks.
+\item Implemented a Splunk logging infrastructure to track site-wide metrics.
+\end{itemize} 
+
+{\sl Business Analyst Intern} \hfill Summer 2012 \\
+BroadSoft, Gaithersburg, MD
+\begin{itemize}
+\item Developed a 100+ page Salesforce user guide for new hires, unique to BroadSoft.
+\end{itemize}
+
+{\sl Professional Services Intern} \hfill Summer 2011 \\
+BroadSoft, Gaithersburg, MD
+\begin{itemize}
+\item Worked extensively with Microsoft Visio building custom icons for BroadSoft.
+\item Partook in a deal involving the installation of a VOIP system at the University of Virginia.
+\end{itemize} 
+
+{\sl Summer Intern} \hfill Summer 2010 \\
+JobFox, LinkedIn Critiquing Team, McLean, VA
+\begin{itemize}
+\item Reviewed LinkedIn profiles of customers, making suggestions to improve their chances of getting hired. \\ 
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPEN SOURCE WORK
+%---------------------------------------------------------------------------------------- 
+
+\moveleft.5\hoffset\centerline{{\sl For additional internship experience, please visit my \underline{\color{blue}\href{http://www.linkedin.com/in/grantmcgovern/}{LinkedIn}}.}}
+
+\section{PROJECTS \& OPEN SOURCE WORK}
+
+\underline{\color{blue}\href{http://www.weatherfetch.com}{WeatherFetch}} $\parallel$ \underline{\color{blue}\href{http://campusconnect.herokuapp.com}{CampusConnect}} $\parallel$
+\underline{\color{blue}\href{http://whereisgrant.herokuapp.com}{WhereIsGrant?}} $\parallel$
+\href{https://github.com/g12mcgov/Barbeque}{\underline {\color{blue} Barbeque} (A C++ HTTP Libcurl Wrapper)} $\parallel$
+\underline{\color{blue}\href{https://github.com/g12mcgov/GroupMeCli}{GroupMeCli}} $\parallel$
+\underline{\color{blue}\href{https://github.com/g12mcgov/DevCharts}{DevCharts}} $\parallel$
+\underline{\color{blue}\href{https://github.com/g12mcgov/StudyBug}{StudyBug}} $\parallel$ \underline{\color{blue}\href{https://github.com/g12mcgov}{And more...}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EXTRA-CURRICULAR ACTIVITIES} 
+
+Elected {\it Secretary}, Pi Kappa Alpha \\
+Elected {\it Inter-Fraternity Council Representative} \\
+Student Union, Attractions Committee \\
+
+%----------------------------------------------------------------------------------------
+
+% Bottom Footer %
+\moveleft.5\hoffset\centerline{{\small\sl This resume was written in \LaTeX. Checkout the source code \color{blue}\underline{\href{http://www.github.com/g12mcgov}{here}.}}}
+
+
+\end{resume}
+\end{document}
