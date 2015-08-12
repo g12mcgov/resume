@@ -1,44 +1,21 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-% Author: Grant McGovern
-% Description: This the LaTex source code for Grant McGovern's resume.
-% Date: 28 December 2014
-%
-% Original author:
-% Rensselaer Polytechnic Institute (Originally a template was used 
-% as the backbone).
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[margin=0.5in, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
 
 % For social media icons. Must compile under LuaLaTex
 \usepackage{fontawesome}
 \usepackage{fontspec}
-
+\usepackage{anysize}
 % Used to color the "grantmcgovern.com" URL
 \usepackage{fancyhdr,graphicx,xcolor,colortbl}
 
 % Used for URL mappings
 \usepackage{hyperref}
 
-% Set top and bottom margins %
-\usepackage[
-top    = 0.30cm,
-bottom = 0.55cm,
-left   = 3.00cm,
-right  = 2.50cm]{geometry}
+\marginsize{40pt}{-50pt}{30pt}{-50pt}
 
-\setlength{\textwidth}{5.1in} % Text width of the document
-
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{6.1in} % set width of text portion
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -55,8 +32,6 @@ right  = 2.50cm]{geometry}
 \moveleft.5\hoffset\centerline{Washington, DC 20015}
 \vspace{2 mm}
 \moveleft.5\hoffset\centerline{{\color{blue}\underline{\href{http://www.grantmcgovern.com}{grantmcgovern.com}}}}
-
- 
 
 %----------------------------------------------------------------------------------------
 
@@ -79,9 +54,10 @@ Minor: Entrepreneurship
 \section{TECHNICAL TOOLBOX} 
 
 {\sl Most Knowledgeable:} Python/C++ \\
-{\sl Knowledgeable:} HTML/Twitter Bootstrap, CSS, JavaScript \\
-{\sl Familiar:} Scala, Java, Django, Flask \\ \\
-{\sl Other:} SQL, MySQL, MongoDB, Amazon AWS, GitHub, Intellij IDEA, Eclipse IDE, Jira Atlassian, Mac OS X / Linux, VPS Hosting, cPanel, Heroku, Splunk
+{\sl Knowledgeable:} PHP, Java, HTML, CSS, JavaScript, Django, Flask \\
+{\sl Familiar:} Scala, Erlang, Node.js\\ \\
+{\sl Database:} SQL, PostgreSQL, MySQL, MongoDB \\
+{\sl Other:} Twitter Bootstrap, jQuery, Amazon AWS, Git, GitHub, Intellij IDEA, Eclipse IDE, Jira Atlassian, Mac OS X / Linux, VPS Hosting, cPanel, Heroku, Splunk, REST applications, Unit Testing, Travis CI
  
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
@@ -89,38 +65,36 @@ Minor: Entrepreneurship
  
 \section{EXPERIENCE}
 
+{\sl Software Development Engineering Intern} \hfill Summer 2015 \\
+\textbf{Time Inc}, Technology \& Product Engineering, New York, NY
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Built the Time Life Alumni Society members website, managing the entire PHP stack.
+\item Architected \& implemented the RESTful API/web application for the DAM (Digital Asset Managament) system.
+\item Wrote custom Wordpress plugins, including a full fledged login/registration system.
+\item Partook in weekly Node.js meet-ups, contributed towards an internal Slack voting system where developers could vote on lunch options.
+\end{itemize}
+
+{\sl Software Engineer} \hfill Winter 2015-Present \\
+\textbf{1834 Software}, Winston-Salem, NC
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Built the RESTful API (Java web application using Jersey, Apache Tomcat, and Maven support) for the GymPeak iOS Application. \underline{\color{blue}\href{http://gympeak.com/}{(http://gympeak.com/)}}
+\item Integrated a sensor system and Raspberry Pi to harvest foot-traffic data from the Wake Forest, UNC, and Davidson College fitness centers, to power the GymPeak iOS Application and provide users with a real-time count of number of people in the gym and historical analytics.
+\item Built a suite of Java averaging tasks that run hourly to compute running averages on gym attendance and update respective database tables.
+\end{itemize}
+
 {\sl Software Engineering Intern} \hfill Summer 2014 \\
-newBrandAnalytics, NLP/Data Science Team, Washington, DC 
+\textbf{newBrandAnalytics}, NLP/Data Science Team, Washington, DC 
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
 \item Hacked on the NLP Stack, implemented a new \& refined Tagging Tool, and built an app used to test the performance and effectiveness of NLP code releases. 
 \end{itemize}
  
 {\sl Software Engineering Intern} \hfill Summer 2013, Winter 2013, Winter 2014 \\
-Cobrain, Data Science Team, Bethesda, MD 
+\textbf{Cobrain}, Data Science Team, Bethesda, MD 
 \begin{itemize} 
 \item Contributed towards the development of a Django web-crawler used to gather product data, built a web application/portal that displayed harvested data, and performed various ad-hoc front-end tasks.
-\item Implemented a Splunk logging infrastructure to track site-wide metrics.
+\item Implemented a Splunk logging infrastructure to track site-wide metrics. \\
 \end{itemize} 
-
-{\sl Business Analyst Intern} \hfill Summer 2012 \\
-BroadSoft, Gaithersburg, MD
-\begin{itemize}
-\item Developed a 100+ page Salesforce user guide for new hires, unique to BroadSoft.
-\end{itemize}
-
-{\sl Professional Services Intern} \hfill Summer 2011 \\
-BroadSoft, Gaithersburg, MD
-\begin{itemize}
-\item Worked extensively with Microsoft Visio building custom icons for BroadSoft.
-\item Partook in a deal involving the installation of a VOIP system at the University of Virginia.
-\end{itemize} 
-
-{\sl Summer Intern} \hfill Summer 2010 \\
-JobFox, LinkedIn Critiquing Team, McLean, VA
-\begin{itemize}
-\item Reviewed LinkedIn profiles of customers, making suggestions to improve their chances of getting hired. \\ 
-\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	OPEN SOURCE WORK
@@ -130,14 +104,15 @@ JobFox, LinkedIn Critiquing Team, McLean, VA
 
 \section{PROJECTS \& OPEN SOURCE WORK}
 
-\underline{\color{blue}\href{http://www.weatherfetch.com}{WeatherFetch}} $\parallel$ \underline{\color{blue}\href{http://campusconnect.herokuapp.com}{CampusConnect}} $\parallel$
-\underline{\color{blue}\href{http://whereisgrant.herokuapp.com}{WhereIsGrant?}} $\parallel$
-\href{https://github.com/g12mcgov/Barbeque}{\underline {\color{blue} Barbeque} (A C++ HTTP Libcurl Wrapper)} $\parallel$
-\underline{\color{blue}\href{https://github.com/g12mcgov/GroupMeCli}{GroupMeCli}} $\parallel$
-\underline{\color{blue}\href{https://github.com/g12mcgov/DevCharts}{DevCharts}} $\parallel$
-\underline{\color{blue}\href{https://github.com/g12mcgov/StudyBug}{StudyBug}} $\parallel$ \underline{\color{blue}\href{https://github.com/g12mcgov}{And more...}}
-
-
+\underline{\color{blue}\href{http://www.weatherfetch.com}{WeatherFetch}}, \href{http://campusconnect.herokuapp.com}{\underline {\color{blue}WIN} (A RESTful API for the Wake Forest University Information System}},
+\underline{\color{blue}\href{http://whereisgrant.herokuapp.com}{WhereIsGrant?}},
+\href{https://github.com/g12mcgov/Barbeque}{\underline {\color{blue} Barbeque} (A C++ HTTP Libcurl Wrapper)},
+\href{https://itunes.apple.com/us/app/gympeak/id1023526402?mt=8}{\underline {\color{blue} GymPeak} (iOS Application)}},
+\underline{\color{blue}\href{https://github.com/g12mcgov/StudyBug}{StudyBug}},
+\underline{\color{blue}\href{https://github.com/g12mcgov/DevCharts}{DevCharts}}, \\
+\underline{\color{blue}\href{https://github.com/g12mcgov/GroupMeCli}{GroupMeCli}},
+\href{https://macon.pw}{\underline{\color{blue} Macon Command Center} (My Home Automation System)},
+\underline{\color{blue}\href{https://github.com/g12mcgov}{And more...}}
 
 %----------------------------------------------------------------------------------------
 %	EXTRA-CURRICULAR ACTIVITIES SECTION
@@ -157,3 +132,4 @@ Student Union, Attractions Committee \\
 
 \end{resume}
 \end{document}
+ 
